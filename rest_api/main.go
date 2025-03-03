@@ -24,5 +24,6 @@ func getSession() *mgo.Session {
 	if err != nil {
 		panic(err)
 	}
+
 	return s
 }
