@@ -55,6 +55,7 @@ func (s *Server) readLoop(conn net.Conn) {
 		}
 		s.msgch<-buf[:n]
 }
+
 func main() {
 	server := NewServer(":3000")
 	go func(){
